@@ -1,0 +1,126 @@
+
+<style>
+  body{
+    background: #6699ff;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrapper{
+    max-width: 500px;
+    width: 100%;
+background: #fff;
+margin: 20px auto;
+padding: 30px;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+  }
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color:#6699ff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .wrapper .form{
+    width: 100%;
+  }
+  .wrapper .form .input_field label{
+    width: 200px;
+    color: #363636;
+    margin-right: 10px;
+    font-size: 14px;
+    font: bold;
+  }
+  .wrapper .form .input_field .input,
+  .wrapper .form .input_field .textarea{
+width: 100%;
+outline: none;
+border: 1px solid #515352;
+font-size: 15px;
+padding: 8px 10px;
+border-radius: 3px;
+transition: all 0.3s ease;
+  }
+  .wrapper .form .input_field .textarea{
+    resize: none;
+height: 125px;
+  }
+  .wrapper .form .input .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #0f5df8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+
+  }
+
+</style>
+
+<body>
+<div class="wrapper">
+  <form>
+  <div class="title">
+    Resume Detail
+  </div>
+  <div class="form">
+    <div class="input_field">
+      <label>Name</label>
+      <input #name type="text" class="input" >
+    </div>
+    <div class="input_field">
+      <label>Profession</label>
+      <input #profession type="text" class="input" >
+    </div>
+    <div class="input_field">
+      <label>Email</label>
+      <input #email type="text" class="input" >
+    </div>
+    <div class="input_field">
+      <label>Phone</label>
+      <input #phone type="text" class="input"  >
+    </div>
+    <div class="input_field">
+      <label>Address</label>
+      <textarea #address class="textarea"  ></textarea>
+    </div>
+    <div class="input_field">
+      <label>Linkdin id</label>
+      <input #linkdin type="text" class="input"  >
+    </div>
+    <div class="input_field">
+      <label>Language</label>
+      <textarea #language class="textarea"  ></textarea>
+    </div>
+    <div class="input_field">
+      <label>Masters</label>
+      <input #master type="text" class="input" >
+    </div>
+    <div class="input_field">
+      <label>Graduation</label>
+      <input #graduation type="text" class="input"  >
+    </div>
+    <div class="input_field">
+      <label>About Yourslef</label>
+      <textarea #about class="textarea"  ></textarea>
+    </div>
+    <div class="input_field">
+      <label>Your Exprience</label>
+      <textarea #exprience class="textarea"  ></textarea>
+    </div>
+    <div class="input_field">
+      <label>Skills</label>
+      <textarea #skills class="textarea"  ></textarea>
+    </div>
+<div class="input">
+  <input type="submit" value="Submit" class="btn" routerLink="/resumebody" (click)="submit()">
+</div>
+
+  </div>
+</form>
+</div>
+</body>
